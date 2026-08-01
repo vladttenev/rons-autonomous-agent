@@ -1,0 +1,15 @@
+import type { Plugin } from "@rons-org/core";
+import transferToken from "./actions/transfer.ts";
+import { WalletProvider, walletProvider } from "./providers/wallet.ts";
+
+export { WalletProvider, transferToken as TransferAptosToken };
+
+export const aptosPlugin: Plugin = {
+    name: "aptos",
+    description: "Aptos Plugin for Rons",
+    actions: [transferToken],
+    evaluators: [],
+    providers: [walletProvider],
+};
+
+export default aptosPlugin;

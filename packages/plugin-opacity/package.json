@@ -1,0 +1,21 @@
+{
+  "name": "@rons-org/plugin-opacity",
+  "version": "0.1.9",
+  "description": "Opacity Protocol adapter for RonsOS",
+  "main": "dist/index.js",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts",
+    "watch": "tsc --watch",
+    "dev": "tsup src/index.ts --format esm --dts --watch"
+  },
+  "dependencies": {
+    "@rons-org/core": "workspace:*",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.5"
+  },
+  "author": "Pons Engineering"
+}

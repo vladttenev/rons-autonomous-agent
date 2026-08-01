@@ -1,0 +1,72 @@
+{
+    "$schema": "https://turbo.build/schema.json",
+    "tasks": {
+        "check-types": {
+            "dependsOn": ["build"]
+        },
+        "@rons-org/agent#check-types": {
+            "dependsOn": [
+                "@rons-org/plugin-solana#build",
+                "@rons-org/plugin-direct#build"
+            ]
+        },
+        "build": {
+            "outputs": ["dist/**"],
+            "dependsOn": ["^@rons-org/core#build"]
+        },
+        "@rons-org/client-direct#build": {
+            "outputs": ["dist/**"],
+            "dependsOn": [
+                "@rons-org/plugin-image-generation#build",
+                "@rons-org/plugin-tee-log#build"
+            ]
+        },
+        "@rons-org/plugin-solana#build": {
+            "outputs": ["dist/**"],
+            "dependsOn": [
+                "@rons-org/plugin-trustdb#build",
+                "@rons-org/plugin-tee#build"
+            ]
+        },
+        "@rons-org/plugin-nft-generation#build": {
+            "outputs": ["dist/**"],
+            "dependsOn": ["@rons-org/plugin-node#build"]
+        },
+        "@rons-org/client-direct#build": {
+            "outputs": ["dist/**"],
+            "dependsOn": ["@rons-org/plugin-tee-verifiable-log#build"]
+        },
+        "@rons-org/plugin-tee-verifiable-log#build": {
+            "outputs": ["dist/**"],
+            "dependsOn": ["@rons-org/core#build", "@rons-org/plugin-tee#build"]
+        },
+        "@rons-org/plugin-evm#build": {
+            "outputs": ["dist/**"],
+            "dependsOn": ["@rons-org/plugin-tee#build"]
+        },
+        "@rons-org/plugin-tee-log#build": {
+            "outputs": ["dist/**"],
+            "dependsOn": [
+                "@rons-org/plugin-tee#build",
+                "@rons-org/plugin-sgx#build"
+            ]
+        },
+        "@rons-org/plugin-quai#build": {
+            "outputs": ["dist/**"],
+            "dependsOn": [
+                "@rons-org/plugin-trustdb#build"
+            ]
+        },
+        "@rons-org/plugin-lightning#build": {
+            "outputs": ["dist/**"],
+            "dependsOn": ["@rons-org/plugin-tee#build"]
+        },
+        "rons-docs#build": {
+            "outputs": ["build/**"]
+        },
+        "dev": {
+            "persistent": true,
+            "cache": false
+        }
+    }
+}
