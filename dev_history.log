@@ -5,3 +5,4 @@
 [2026-08-07T14:12:00] docs: update README with RONS manifest
 [2026-08-07T19:05:00] chore: update character prompt for Fomo integration
 [2026-08-08T14:47:00] feat: link Fomo publisher action to execution trigger
+[2026-08-08T12:42:00] refactor: optimize core logic for RONS
