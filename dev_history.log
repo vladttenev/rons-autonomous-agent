@@ -9,3 +9,4 @@
 [2026-08-09T16:18:00] docs: update README with RONS manifest
 [2026-08-10T15:10:00] chore: update character prompt for Fomo integration
 [2026-08-10T09:26:00] refactor: improve conviction scoring algorithm
+[2026-08-12T13:27:00] refactor: optimize core logic for RONS
