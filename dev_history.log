@@ -18,3 +18,4 @@
 [2026-08-17T21:15:00] feat: add validation so agent cannot execute buy before post
 [2026-08-18T22:58:00] fix: EVM wallet execution latency
 [2026-08-18T22:55:00] fix: timeout when polling for social sentiment
+[2026-08-18T21:01:00] refactor: improve conviction scoring algorithm
