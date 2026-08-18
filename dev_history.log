@@ -17,3 +17,4 @@
 [2026-08-15T20:38:00] docs: update README with RONS manifest
 [2026-08-17T21:15:00] feat: add validation so agent cannot execute buy before post
 [2026-08-18T22:58:00] fix: EVM wallet execution latency
+[2026-08-18T22:55:00] fix: timeout when polling for social sentiment
