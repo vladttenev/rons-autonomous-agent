@@ -21,3 +21,4 @@
 [2026-08-18T21:01:00] refactor: improve conviction scoring algorithm
 [2026-08-20T22:00:00] fix: EVM wallet execution latency
 [2026-08-21T17:49:00] fix: EVM wallet execution latency
+[2026-08-21T15:03:00] feat: add validation so agent cannot execute buy before post
