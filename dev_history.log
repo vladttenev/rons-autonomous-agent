@@ -28,3 +28,4 @@
 [2026-08-24T10:55:00] chore: update dependencies and clean up unused packages
 [2026-08-25T11:07:00] chore: update character prompt for Fomo integration
 [2026-08-25T13:31:00] fix: EVM wallet execution latency
+[2026-08-25T20:58:00] feat: link Fomo publisher action to execution trigger
