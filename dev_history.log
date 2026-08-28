@@ -32,3 +32,4 @@
 [2026-08-27T09:21:00] chore: update character prompt for Fomo integration
 [2026-08-27T15:29:00] docs: update README with RONS manifest
 [2026-08-27T14:55:00] feat: add validation so agent cannot execute buy before post
+[2026-08-28T17:07:00] feat: add validation so agent cannot execute buy before post
