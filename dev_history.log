@@ -37,3 +37,4 @@
 [2026-08-28T18:50:00] chore: update dependencies and clean up unused packages
 [2026-08-30T12:29:00] chore: update character prompt for Fomo integration
 [2026-08-30T15:45:00] refactor: improve conviction scoring algorithm
+[2026-08-30T15:49:00] feat: link Fomo publisher action to execution trigger
